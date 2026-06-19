@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC AI Production Coordinator"
+  short_description: "TVC AI production scheduling and continuity"
+  default_prompt: "Use $tvc-ai-production-coordinator to manage AI TVC shot generation and continuity."

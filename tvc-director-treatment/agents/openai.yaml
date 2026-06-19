@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Director Treatment"
+  short_description: "Director treatment and visual package"
+  default_prompt: "Use $tvc-director-treatment to create a rich TVC director treatment and visual package."

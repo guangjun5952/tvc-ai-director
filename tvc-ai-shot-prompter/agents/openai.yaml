@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC AI Shot Prompter"
+  short_description: "Structured TVC image and video prompts"
+  default_prompt: "Use $tvc-ai-shot-prompter to create structured image and video prompts for these TVC shots."

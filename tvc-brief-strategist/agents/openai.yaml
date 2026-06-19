@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Brief Strategist"
+  short_description: "TVC brief diagnosis and strategy"
+  default_prompt: "Use $tvc-brief-strategist to diagnose this TVC brief and shape proposal directions."

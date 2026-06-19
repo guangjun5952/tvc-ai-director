@@ -1,0 +1,4 @@
+interface:
+  display_name: "Multi Model Router"
+  short_description: "Route readiness gates for model workflows"
+  default_prompt: "Use $multi-model-router to decide what information is required before routing this task."

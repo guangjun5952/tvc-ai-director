@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Client Review Interpreter"
+  short_description: "TVC client feedback and revision interpreter"
+  default_prompt: "Use $tvc-client-review-interpreter to decode this client feedback into actionable TVC revisions."

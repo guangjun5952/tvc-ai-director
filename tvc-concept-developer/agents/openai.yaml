@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Concept Developer"
+  short_description: "TVC creative proposal deck logic"
+  default_prompt: "Use $tvc-concept-developer to build a client-facing TVC creative proposal."

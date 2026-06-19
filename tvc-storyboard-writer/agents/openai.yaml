@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Storyboard Writer"
+  short_description: "Director-level TVC storyboard scripts"
+  default_prompt: "Use $tvc-storyboard-writer to turn this creative concept into a director-level storyboard script."

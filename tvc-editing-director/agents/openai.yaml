@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC Editing Director"
+  short_description: "TVC editing rhythm and delivery director"
+  default_prompt: "Use $tvc-editing-director to shape the edit rhythm and delivery plan for this TVC."

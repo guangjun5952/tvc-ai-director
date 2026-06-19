@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC PPM Producer"
+  short_description: "TVC PPM planning and production pack builder"
+  default_prompt: "Use $tvc-ppm-producer to build a complete PPM pack for this TVC."

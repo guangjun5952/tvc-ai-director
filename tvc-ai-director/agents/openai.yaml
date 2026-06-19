@@ -1,0 +1,4 @@
+interface:
+  display_name: "TVC AI Director"
+  short_description: "TVC AI director studio router"
+  default_prompt: "Use $tvc-ai-director to route my TVC brief into the right director workflow."
