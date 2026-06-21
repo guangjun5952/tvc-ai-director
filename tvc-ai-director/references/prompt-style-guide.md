@@ -45,6 +45,37 @@ Write this before per-shot prompts:
 负面约束：
 ```
 
+## Complex One-Take Video Pattern
+
+For complex action shots with multiple referenced assets, native asset IDs, a single continuous take, and detailed physical events, structure the prompt as:
+
+```markdown
+【基础设定】
+角色/主体1：<node-asset>...</node-asset> 外形、材质、服装、表情/状态规则、不可变化项。
+角色/主体2：<node-asset>...</node-asset> 外形、动作特征、不可变化项。
+关键道具：<node-asset>...</node-asset> 尺寸、材质、启动方式、发光/变形/爆炸等状态变化。
+群体/背景角色：<node-asset>...</node-asset> 数量感、外观、运动方式、危险感。
+
+场景：<node-asset>...</node-asset> 时代、地点、天气、建筑、地面、前中后景、环境道具。
+声音：是否配乐、是否氛围音、同期声保留项。
+
+【氛围与画质】
+风格核心：
+视觉基调：
+色彩与影调：
+
+【画面内容】
+分镜：
+景别：
+构图：
+运镜手法：
+画面内容：
+
+负面约束：
+```
+
+Keep `分镜`, `景别`, `构图`, `运镜手法`, and `画面内容` separate. Write the action chain in physical order: hand/object interaction, prop state change, subject movement, background reaction, ending frame/camera consequence.
+
 ## Negative Prompt Defaults
 
 Block:
