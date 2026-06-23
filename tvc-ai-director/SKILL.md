@@ -27,6 +27,7 @@ Default stance:
    - PPM and production pack: use `$tvc-ppm-producer`.
    - Shot script and storyboard table: use `$tvc-storyboard-writer`.
    - AI image/video prompts: use `$tvc-ai-shot-prompter`.
+   - Storyboard/prompt Excel workbook: use `$tvc-storyboard-writer` + `$tvc-ai-shot-prompter`, then export with `scripts/make_tvc_excel.py` or a spreadsheet tool.
    - AI production coordination: use `$tvc-ai-production-coordinator`.
    - Edit rhythm, sound, packaging, delivery: use `$tvc-editing-director`.
    - Client feedback and revision parsing: use `$tvc-client-review-interpreter`.
@@ -76,6 +77,7 @@ Default stance:
 - If the user asks for "PPM", "演员", "服装", "美术", "音乐参考", "拍摄准备", route to PPM.
 - If the user asks for "分镜", "镜头脚本", "shot list", route to storyboard.
 - If the user asks for "prompt", "AI生成", "生图", "生视频", "可灵", "Runway", "Midjourney", route to AI shot prompter and production coordinator.
+- If the user asks for "Excel", "表格", "xlsx", "分镜表", "prompt表", "生成表格", or asks to put storyboard/prompts into a spreadsheet, route through storyboard + AI shot prompter and export a workbook.
 - If the user asks for "剪辑", "节奏", "音乐", "声音", "包装", "交付", route to editing.
 - If the user pastes client comments, route to review interpreter before editing.
 
@@ -115,6 +117,11 @@ Output only:
 
 - Use `assets/templates/` when the user needs copyable tables for brief, proposal, treatment, PPM, storyboard, prompt, edit, or review.
 - Use `scripts/make_tvc_tables.py` when converting structured Markdown-like rows into CSV for Excel or spreadsheet workflows.
+- Use `scripts/make_tvc_excel.py` when converting a TSV storyboard/prompt table into a lightweight `.xlsx` workbook without external dependencies.
+- For polished multi-sheet `.xlsx` workbooks, prefer the available spreadsheet runtime/tooling; include at minimum:
+  - `分镜+Prompt` sheet with shot timing, frame content, camera, product/logo, sound, image prompt, video prompt, negative constraints, continuity lock, and regeneration notes.
+  - `全片一致性` sheet with product, actor, location, color, camera, and forbidden-drift anchors.
+  - `执行检查清单` sheet for production/AI-generation QA.
 
 ## Quality Gate
 

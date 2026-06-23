@@ -33,6 +33,7 @@ The image prompt and video prompt use different methods:
    - Negative prompt.
    - Continuity lock.
    - Regeneration notes.
+   - If the user asks for Excel/表格/xlsx, preserve storyboard columns and append prompt columns so the table can be exported directly.
 
 4. Keep prompts executable:
    - Use concrete visual facts instead of abstract emotions.
@@ -56,6 +57,13 @@ Prompt table columns:
 ```markdown
 | 镜号 | 图片 Prompt | 视频 Prompt | 负面约束 | 连续性锁定 | 重生成备注 |
 | --- | --- | --- | --- | --- | --- |
+```
+
+Excel-ready combined table columns:
+
+```markdown
+| 镜号 | 时间码 | 时长 | 景别 | 画面内容 | 镜头运动 | 产品/logo | 声音/字幕 | 图片 Prompt | 视频 Prompt | 负面约束 | 连续性锁定 | 重生成备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 ```
 
 ## Image Prompt Method

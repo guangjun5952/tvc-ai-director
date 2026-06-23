@@ -67,6 +67,7 @@ Avoid empty words such as "高级感" or "电影感" unless concretely defined. 
 
 1. Confirm format:
    - Duration, ratio, channels, dialogue/VO/super needs, product/logo requirements, AI/live-action mode.
+   - If the user asks for Excel/表格/xlsx, keep shot fields spreadsheet-ready and include a `时间码` column.
 
 2. Complete the four thinking steps above.
 
@@ -112,12 +113,21 @@ Avoid empty words such as "高级感" or "电影感" unless concretely defined. 
 |------|------|------|---------|-----------|-----------|------|
 ```
 
+When the user asks for a spreadsheet or the storyboard will be handed to `$tvc-ai-shot-prompter`, use the expanded table:
+
+```markdown
+| 镜号 | 时间码 | 时长 | 景别 | 画面内容 | 镜头运动 | 产品/logo | 声音/字幕 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+```
+
 ## Shot Table Rules
 
 - In `画面内容`, include the subject, action, emotional state, and visual reason.
 - In `镜头运动`, specify actual camera grammar, not vague movement.
 - In `产品/logo`, mark `无`, `局部露出`, `完整露出`, `高潮产品镜头`, or `结尾记忆点`.
 - In `声音`, include music, SFX, VO, silence, or sound transition.
+- For Excel-ready work, make every row one shot only; do not combine multiple shots in one row.
+- Keep total timing continuous and exact; `时间码` should cover the full target duration without gaps.
 - Add `[高潮镜头]` in the relevant shot.
 - Add `[结尾记忆点]` in the final memory shot.
 
